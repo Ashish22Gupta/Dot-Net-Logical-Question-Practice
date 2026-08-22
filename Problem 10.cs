@@ -41,3 +41,4 @@ public static class Problem10
             Console.WriteLine();
         }
     }
+}
