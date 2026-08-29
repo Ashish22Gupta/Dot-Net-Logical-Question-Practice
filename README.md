@@ -15,6 +15,7 @@ This repository documents my journey of practicing **Data Structures and Algorit
 ## 🛠️ Language
 
 - C#
+- C++
 
 ## 📚 Topics Covered
 
