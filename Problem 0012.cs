@@ -5,26 +5,28 @@
 //4 5 12 13
 
 using System;
-namespace HelloWold;
-public static class Program
+
+namespace HelloWorld;
+
+class Program
 {
-    public static void Main(string[] args)
+    static void Main(string[] args)
     {
         int limit = 4;
+        int even = limit - 1, odd = 0;
         for (int i = 0; i < limit; i++)
         {
-            for (int j = 0; j < limit; j++)
+            for (int j = 1; j <=limit; j++)
             {
-                Console.Write(j % 2);
-                if (j % 2 == 0)
-                {
-                    //Console.Write((j * limit) + i + 1 + " ");
-                }
-                else
-                {
-                    //Console.Write(((j + 1) * limit) - i + " ");
+                if(j%2==0){
+                    Console.Write(limit*j - odd+" ");
+                }else{
+                    Console.Write(limit*j - even+" ");
                 }
             }
+            odd++;
+            even--;
             Console.WriteLine();
         }
     }
+}    
