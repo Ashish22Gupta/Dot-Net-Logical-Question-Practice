@@ -118,20 +118,3 @@ Each file is self-contained with a `Main` method and expected output documented 
 </details>
 
 ---
-
-## How to Run
-
-### Prerequisites
-- [.NET SDK](https://dotnet.microsoft.com/download) (6.0 or later recommended)
-
-### Using .NET CLI
-```bash
-# Create a new console project (if not already created)
-dotnet new console -n DailyPractice
-cd DailyPractice
-
-# Replace Program.cs with any problem file
-cp "../Problem 0016.cs" Program.cs
-
-# Run
-dotnet run
