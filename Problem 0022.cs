@@ -1,9 +1,9 @@
-//Strong Number:- Number whose sum of the factorials of its digits equals the number itself.
-//Like:- 1, 2, 145, 40585
-//1! = 1 = 1
-//4! = 4 x 3 x 2 x 1 = 24
-//5! = 5 x 4 x 3 x 2 x 1 = 120 
-// 1 + 24 + 120 = 145
+//Krishnamurthy / Strong Number:- A number equal to the sum of the factorials of its digits.
+//Example:- 145 
+//1! = 1
+//4! = 4x3x2x1 = 24
+//5! = 5x4x3x2x1 = 120
+//Examples: 1, 2, 145, 40585
          
 using System;
 namespace HelloWorld;
