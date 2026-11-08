@@ -19,13 +19,35 @@ class Program
         
         int[] sortedarr = new int[index];
         int temp = 0;
+        bool flag;
+
         for(i=0;i<arr.Length;i++){
-            for(j=i;j<arr.Length;j++){
-                if(arr[i]!=arr[j]){
-                    sortedarr[temp]=arr[i];
-                    temp++;
+
+            flag = true;
+            for(j=0;j<i;j++){
+                if(arr[i]==arr[j])
+                {
+                    flag=false;
+                    break;
                 }
             }
+
+            if(flag==true){
+                sortedarr[temp]=arr[i];
+                temp++;
+            }
+        }
+
+        Console.Write("Original Array:- ");
+        for(i=0;i<arr.Length;i++)
+        {
+            Console.Write(arr[i]+" ");
+        }
+
+        Console.Write("\nNew Array:- ");
+        for(i=0;i<sortedarr.Length;i++)
+        {
+            Console.Write(sortedarr[i]+" ");
         }
     }
 }
